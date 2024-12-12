@@ -6,7 +6,7 @@ ApplicationWindow {
     visible: true
     width: 300
     height: 500
-    title: "Change Color Example"
+    title: "qml-3"
 
     property string bodyColor: "white" 
     property string contentText: "Content" 
