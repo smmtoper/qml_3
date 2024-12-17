@@ -1,17 +1,20 @@
 import QtQuick 2.15
-import QtQuick.Layouts 1.15
+import QtQuick.Controls 2.15
 
 Rectangle {
-    id: body
-    Layout.fillWidth: true
-    Layout.fillHeight: true
-    border.color: "black"
-    anchors.margins: 15
+    id: content
+    anchors.top: header.bottom
+    anchors.left: parent.left
+    anchors.right: parent.right
+    anchors.bottom: footer.top
+    color: "lightgray"
 
-    property alias color: body.color
+    property string contentText: "Content"
 
     Text {
         anchors.centerIn: parent
-        text: "Content"
+        text: content.contentText
+        color: "black"
+        font.pointSize: 16
     }
 }
